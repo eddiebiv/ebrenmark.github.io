@@ -4,7 +4,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* test */
 
 .header{
     min-height: 100vh;
@@ -198,6 +197,23 @@ h1{
 }
 
 .about-me-right a{
+    margin-top: 10px;
+}
+
+.about-me-right1{
+    flex-basis: 62%; 
+}
+
+.about-me-right1 p{
+    color: #222;
+    padding: 0;
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+.about-me-right1 a{
     margin-top: 10px;
 }
 
@@ -401,6 +417,10 @@ h1{
     position: absolute;
     opacity: 0;
     transition: 0.5s;
+}
+
+.layer h4{
+    
 }
 
 .layer:hover h3{
