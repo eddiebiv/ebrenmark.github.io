@@ -370,6 +370,18 @@ h1{
 
 
 /* projects section */
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 25px;
+}
+
+.project-content{
+    position: relative;
+}
+
 .projects{
     width: 80%;
     margin: auto;
@@ -379,11 +391,11 @@ h1{
 
 /* image */
 .projects-col{
-    flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    flex-basis: calc(33.33% - 80px);
 }
 
 .projects-col img{
@@ -399,6 +411,16 @@ h1{
     top: 0;
     left: 0;
     transition: 0.5s;
+}
+
+.description{
+    margin-top: 10px;
+    text-align: center;
+}
+  
+.description h4{
+    font-weight: 500;
+    font-size: 18px;
 }
 
 /* column animation */
@@ -419,14 +441,20 @@ h1{
     transition: 0.5s;
 }
 
-.layer h4{
-    
-}
-
 .layer:hover h3{
     bottom: 49%;
     opacity: 1;
 }
+
+@media screen and (max-width: 768px){
+    .row{
+      flex-direction: column;
+    }
+  
+    .projects-col{
+      flex-basis: 100%;
+    }
+  }
 
 
 
