@@ -252,6 +252,7 @@ h1{
 h1{
     font-size: 36px;
     font-weight: 600;
+    text-align: center;
 }
 
 .skills__content{
@@ -263,6 +264,7 @@ h1{
     row-gap: 3.5rem;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .skills__title{
@@ -389,6 +391,10 @@ h1{
     padding-top: 50px;
 }
 
+.project-container{
+    width: 30%;
+}
+
 /* image */
 .projects-col{
     border-radius: 10px;
@@ -396,6 +402,8 @@ h1{
     position: relative;
     overflow: hidden;
     flex-basis: calc(33.33% - 80px);
+    border-style: solid;
+    border-color: #f44336;
 }
 
 .projects-col img{
@@ -447,12 +455,18 @@ h1{
 }
 
 @media screen and (max-width: 768px){
-    .row{
+    .row1{
       flex-direction: column;
+      align-items: center;
     }
   
     .projects-col{
-      flex-basis: 100%;
+      flex-basis: 90%;
+      max-width: 90%;
+    }
+
+    .project-container{
+        width: 90%;
     }
   }
 
@@ -460,14 +474,17 @@ h1{
 
 /* footer */
 .footer{
-    width: 100%;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 80px;
     text-align: center;
     padding: 30px 0;
+    border-top: 1px solid #f44336;
 }
 
 .footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
     font-weight: 600;
     font-size: 24px;
 }
