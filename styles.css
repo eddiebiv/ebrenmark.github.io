@@ -493,6 +493,8 @@ h1{
 
 .programs__container{
     overflow: initial;
+    justify-content: center;
+    align-items: center;
 }
 
 .programs__content{
@@ -517,6 +519,7 @@ h1{
     font-weight: 500;
     margin-bottom: 1.25rem;
     margin: .5rem 0 1.25rem;
+    text-align: left;
 }
 
 .programs__button{
@@ -537,6 +540,70 @@ h1{
     transform: translateX(.3rem);
 }
 
+/* swiper */
+.programs__container .swiper-button-prev,
+.programs__container .swiper-button-next{
+    width: initial;
+    height: initial;
+    margin: initial;
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.programs__container .swiper-button-prev{
+    left: 12rem;
+    top: 8rem;
+}
+
+.programs__container .swiper-button-next{
+    right: 12rem;
+    top: 8rem;
+}
+.programs__container .swiper-slide{
+    margin-bottom: 3rem;
+}
+
+.programs__container .swiper-pagination-bullets{
+    bottom: 0;
+}
+
+.programs__container .swiper-pagination-bullet{
+    background-color: #5e5e5e;
+    opacity: initial;
+}
+
+.programs__container .swiper-pagination-bullet-active{
+    background-color: #f44336;
+}
+
+@media screen and (max-width: 768px){
+    .programs__container{
+        overflow: initial;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+    }
+
+    /* swiper */
+    .programs__container .swiper-button-prev,
+    .programs__container .swiper-button-next{
+        width: initial;
+        height: initial;
+        margin: initial;
+        font-size: 2.5rem;
+        color: #222;
+    }
+
+    .programs__container .swiper-button-prev{
+        left: 0rem;
+        top: 8rem;
+    }
+
+    .programs__container .swiper-button-next{
+        right: 0rem;
+        top: 8rem;
+    }
+}
 
 
 

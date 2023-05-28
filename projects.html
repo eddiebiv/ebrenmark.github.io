@@ -107,13 +107,27 @@
             </div>
           </div>
 
+          <!-- program 1.2 -->
+          <div class="programs__content swiper-slide">
+            <img src="images/c++.svg" alt="" class="programs__img">
+
+            <div>
+              <span class="programs__subtitle">C++</span>
+              <h1 class="programs__title">BST Anagram Sorter</h1>
+
+              <a href="#" class="programs__button">
+                View Code <i class="fa fa-long-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
           <!-- program 2 -->
           <div class="programs__content swiper-slide">
-            <img src="images/icons8-c.svg" alt="" class="programs__img">
+            <img src="images/download.png" alt="" class="programs__img">
 
             <div>
               <span class="programs__subtitle">Assembly</span>
-              <h1 class="programs__title">Postfix Stack Calculator</h1>
+              <h1 class="programs__title">Postfix Stack<br> Calculator</h1>
 
               <a href="#" class="programs__button">
                 View Code <i class="fa fa-long-arrow-right"></i>
@@ -150,17 +164,16 @@
           </div>
 
         </div>
+
         <!-- swiper arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
 
         <!-- swiper pagination -->
         <div class="swiper-pagination"></div>
+
       </div>
     </div>
-
-
-
   </section>
 
 
@@ -173,7 +186,7 @@
       <a href="https://github.com/eddiebiv" class="fa fa-github"></a>
       <a href="https://www.instagram.com/eddiebiv_/" class="fa fa-instagram"></a>
     </div>
-    <p>Made by Eddie Brenmark <i class="fa fa-copyright"></i> 2023</p>
+    <p>Made by Eddie Brenmark <i class="fa fa-copyright"></i> May 2023</p>
   </section>
 
 
@@ -191,6 +204,31 @@
 
 <!-- swiper -->
 <script src="swiper-bundle.min.js"></script>
-  
+
+<script>
+let swiperProjects = new Swiper(".programs__container", {
+    loop: true,
+    spaceBetween: 24,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    // breakpoints: {
+    //   1200: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 20,
+    //   },
+    //   768: {
+    //     slidesPerView: 4,
+    //     spaceBetween: 40,
+    //   },
+    // },
+});
+</script>
+
 </body>
 </html>
