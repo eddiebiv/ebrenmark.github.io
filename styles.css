@@ -614,14 +614,39 @@ h1{
     text-align: center;
 }
 
+.resume iframe{
+    width: 44%;
+    height: 1070px;
+}
+
+@media screen and (max-width: 600px){
+    .resume{
+    flex-direction: column;
+    align-items: center;
+    }
+    .resume iframe{
+        width: 80%;
+        height: 400px;
+    }
+}
 @media screen and (max-width: 768px){
     .resume{
     flex-direction: column;
     align-items: center;
     }
-    .resume embed{
-        width: 100%;
+    .resume iframe{
+        width: 80%;
         height: 620px;
+    }
+}
+@media screen and (max-width: 1800px){
+    .resume{
+    flex-direction: column;
+    align-items: center;
+    }
+    .resume iframe{
+        width: 50%;
+        height: 1070px;
     }
 }
 

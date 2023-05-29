@@ -1,10 +1,10 @@
-<?php
+<!--
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_form = 'eddiebrenmark@gmail.com';        //webiste email
+$email_from = 'info@eddiebiv.github.io';        //webiste email
 $email_subject = 'New Form Submission';
 $email_body = "User Name: $name.\n".
                 "User Email: $visitor_email.\n".
@@ -19,4 +19,23 @@ $headers .= "Reply-To: $visitor_email \r\n";
 mail($to,$email_subject,$email_body,$headers);
 
 header("Location: contact.html");
+ -->
+
+ <?php
+
+if(isset($_POST['submit'])){
+    $name = $_POST['name'];
+    $mailFrom = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+
+    $mailTo = 'eddiebrenmark@gmail.com';
+    $headers = "From: ".$mailFrom;
+    $txt = "You have recieved an email from ".$name.".\n\n".$message;
+
+    mail($mailTo,$subject,$txt,$headers);
+    header("Location: contact.html")
+
+}
+
 ?>
